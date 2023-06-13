@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerador de Cores Aleatórias</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .cor-aleatoria {
+      font-size: 24px;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="cor-aleatoria"></div>
+
+  <script>
+    function gerarCorAleatoria() {
+      const caracteresHex = '0123456789ABCDEF';
+      let cor = '#';
+
+      for (let i = 0; i < 6; i++) {
+        const indiceAleatorio = Math.floor(Math.random() * 16);
+        cor += caracteresHex[indiceAleatorio];
+      }
+
+      return cor;
+    }
+    const corAleatoria = gerarCorAleatoria();
+    const corAleatoriaDiv = document.querySelector('.cor-aleatoria');
+    corAleatoriaDiv.textContent = corAleatoria;
+    corAleatoriaDiv.style.backgroundColor = corAleatoria;
+  </script>
+</body>
+</html>
