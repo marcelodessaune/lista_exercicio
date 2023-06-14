@@ -12,9 +12,17 @@ function numeroPrimo(number) {
       
         return true;
       }
+const primos = [];
+
+for (let i = 1; i <= 1000; i++) {
+  if (numeroPrimo(i)) {
+    primos.push(i);
+  }
+}
       //exemplo
       numeroPrimo(12) //false
       numeroPrimo(5) //true
+      primos        // lista os números primos de 1 até 1000
 
 //2) Inverter uma string
 function inverterString(str) {
