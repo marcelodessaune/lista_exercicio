@@ -190,8 +190,17 @@ function calcularFatorial(numero) {
       return fatorial;
     }
   }
-  //exemplo
-  calcularFatorial(5) //120
+  //exemplo de 1 a 10
+  calcularFatorial(1)   //1
+  calcularFatorial(2)  //2
+  calcularFatorial(3)  //6
+  calcularFatorial(4)  //24
+  calcularFatorial(5)  //120
+  calcularFatorial(6)  //720
+  calcularFatorial(7)  //5040
+  calcularFatorial(8)  //40320
+  calcularFatorial(9)  //362880
+  calcularFatorial(10) //3628800
 
 //10) Verificar se uma palavra é um anagrama
 function saoAnagramas(palavra1, palavra2) {
